@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>edit or remove elemnts</title>
+</head>
+<body style="background-color: cadetblue; color: azure;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        function addlanguage(languagename) {
+        const li = document.createElement('li')
+        li.innerHTML = `${languagename}`
+        document.querySelector(".language").appendChild(li)
+        }
+            addlanguage("python")
+            addlanguage("c++")
+            
+            function addoptilang(langname) {
+                const li = document.createElement("li")
+                li.appendChild(document.createTextNode(langname))
+                document.querySelector(".language").appendChild(li)
+            }
+             addoptilang("c")
+             
+             
+             //edit
+            const secondlang = document.querySelector('.li:nth-child(2)')
+            secondlang.innerHTML = "maja"
+
+        </script>
+</body>
+</html>
